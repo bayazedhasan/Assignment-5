@@ -1,6 +1,6 @@
 document.getElementById("card").addEventListener('click', function(url){
     
-        window.location.href ='/main.html'
+        window.location.href ='./main.html'
     
 })
 const body=document.getElementById('body');
