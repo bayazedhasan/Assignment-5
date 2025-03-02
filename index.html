@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dev-Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <p>Hello world</p>
+<body id="body" class="bg-[#f4f7ff] w-screen h-100%">
+    <header class="mx-30" >
+      <nav  class="pt-5">
+        <div class="flex justify-between bg-white shadow-sm rounded-[12px] h-12">
+          <div class="flex items-center pl-4">
+            <div>
+              <img class="w-7 pr-2 " src="assets/logo.png" alt="">
+            </div>
+            <h2>Dev<span class="font-bold">Board</span></h2>
+          </div>
+          <div class="flex items-center pr-4">
+            <div class="flex gap-2 bg-[#f4f7ff] rounded-[18px] w-18 p-2">
+              <div><img class="w-6" src="assets/checkbox.png" alt=""></div>
+              <div id="nav-increase"><span>23</span></div>
+            </div>
+            <div id="color-btn">
+              <img class="w-10 pl-2 " src="assets/theme-btn.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex justify-between">
+      <section class="ml-30 w-210 h-[600px] bg-white shadow-sm rounded-[12px] mt-5">
+        <div class="grid grid-cols-3 gap-4 py-4 px-3">
+          <div  class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px]">
+            <div class="justify-center">
+              <p class="text-[#9094a0] font-semibold mt-5 ml-18">Task Assiged</p>
+              <div class="flex  justify-center gap-4 mr-25 mb-1 ">
+                <div class="bg-white rounded-full w-10 h-10 ">
+                  <img class="w-7 pt-3 pl-3" src="assets/checkbox.png" alt="">
+                </div>
+              <div ><span id="task-as" class="text-black text-[18px] font-semibold mr-6">6</span></div>
+              </div>
+              
+              
+              
+            </div>
+
+          </div>
+          <div id="card" class="flex">
+            <div  class="bg-linear-to-r/srgb from-[#5b77fd] to-[#889bf9] p-4 text-white text-left rounded-[12px]">
+              <div class="flex justify-center items-center mt-5">
+                <div>
+                  <img class=" w-13" src="assets/board.png" alt="">
+                </div>
+                <div><span class="text-[16px]">Discover Something New Today!</span>
+                </div>
+
+              </div>
+          </div>
+            
+
+          </div>
+          <div  class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px]">
+            <div class="flex justify-center items-center mt-6 gap-3">
+             <div>
+              <img src="assets/calender.png" alt="">
+             </div>
+              <div>
+                <span id="currentDate" class="text-gray-600"></span>
+              </div>
+  
+              
+            </div>
+
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-25 text-center font-[12px]">Shop Ease</p>
+              <h1 id="fix-mobile" class="text-black font-bold p-1">Fix Mobile Button Issue</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">21 March 2025</h4>
+            </div>
+            <div id="btn-a" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-20 text-center font-[12px]">Soft Pay</p>
+              <h1 id="Add-Pay" class="text-black font-bold p-1">Add Pay Success Modal</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">25 March 2025</h4>
+            </div>
+            <div id="btn-b" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-20 text-center font-[12px]">Meta</p>
+              <h1 id="Add-new" class="text-black font-bold p-1">Add new reaction</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">31 March 2025</h4>
+            </div>
+            <div id="btn-c" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-40 text-center font-[12px]">Programming Hero</p>
+              <h1 id="Fix-video" class="text-black font-bold p-1">Fix Video Loading Issue</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">21 March 2025</h4>
+            </div>
+            <div id="btn-d" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-30 text-center font-[12px]">Google LLC</p>
+              <h1 id="Integrate" class="text-black font-bold p-1">Integrate AI search</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">01 April 2025</h4>
+            </div>
+            <div id="btn-e" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-[#f4f7ff] p-4 text-white text-left rounded-[12px] h-50">
+            <div>
+              <p class="text-[#8d9191] bg-white rounded-[12px] w-30 text-center font-[12px]">polygon Tech</p>
+              <h1 id="review-ami-probashi" class="text-black font-bold p-1">Review Ami Probashi Site</h1>
+              <p class="text-[#8d9191] bg-white rounded-sm p-1 text-[12px]">A card component has a figure, a body part and inside body there are title and actions parts</p>
+              <h4 class="text-[#8d9191] text-[14px] pt-1">Deadline</h4>
+              <h4 class="text-[#8d9191] text-[14px]">5 May 2025</h4>
+            </div>
+            <div id="btn-f" class="flex justify-end mt-[-30px]">
+              <div class="bg-[#412adb] rounded-sm p-1.5 w-25 text-center shadow-sm">
+                <button>Completed</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="mr-30 mt-5">
+          <div class=" w-66 h-[600px] bg-white shadow-sm rounded-[12px] py-4 px-3">
+            
+            <div class="grid justify-center">
+              <div class="flex justify-center items-center ">
+                <img class="pr-2 w-7" src="assets/activity.png" alt="">
+                <h2 class="pr-2">Activity Log</h2>
+              </div>
+              <div class="mt-2 bg-[#412adb] rounded-sm p-2 ">
+                <button id="clear-history" class="ml-1 text-white" type="reset">Clear History</button>
+              </div>
+              
+            </div>
+            <div class="border-t border-gray-500 w-full my-4"></div>
+            <div id="activity-log">
+
+            </div>
+          </div>
+
+        </section>
+     
+        
+
+
+    </main>
+<script src="script/sctipt.js"></script>
+<script src="script/btn-a.js"></script> 
+<script src="script/btn-b.js"></script>
+<script src="script/btn-c.js"></script>
+<script src="script/btn-d.js"></script>
+<script src="script/btn-e.js"></script>
+<script src="script/btn-f.js"></script>
 </body>
 </html>
